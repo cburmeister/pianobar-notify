@@ -13,7 +13,7 @@ Clone this repository:
 $ git clone https://github.com/cburmeister/pianobar-notify.git
 ```
 
-Grab the `terminal-notifier` package:
+Grab the `terminal-notifier` package using [Homebrew](http://brew.sh/):
 
 ```bash
 $ brew install terminal-notifier
@@ -22,7 +22,7 @@ $ brew install terminal-notifier
 Link the file to your pianobar config directory: 
 
 ```bash
-$ ln -s terminal-notify/notify.rb ~/.config/pianobar/notify.rb
+$ ln -s pianobar-notify/notify.rb ~/.config/pianobar/notify.rb
 ```
 
 Update your pianobar config file:
