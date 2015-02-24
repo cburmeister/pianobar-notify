@@ -3,15 +3,11 @@ pianobar-notify
 
 Pianobar desktop notifications on OSX.
 
+![Pianobar desktop notifications on OSX](https://cloud.githubusercontent.com/assets/1633451/6342993/090cd23a-bb96-11e4-9213-be70e723829c.png)
+
 ---
 
-## Installation
-
-Clone this repository:
-
-```bash
-$ git clone https://github.com/cburmeister/pianobar-notify.git
-```
+## Install
 
 Grab the `terminal-notifier` package using [Homebrew](http://brew.sh/):
 
@@ -19,15 +15,8 @@ Grab the `terminal-notifier` package using [Homebrew](http://brew.sh/):
 $ brew install terminal-notifier
 ```
 
-Link the file to your pianobar config directory: 
+The `Makefile` will copy over the script and update your `pianobar` config:
 
 ```bash
-$ ln -s pianobar-notify/notify.rb ~/.config/pianobar/notify.rb
-```
-
-Update your pianobar config file:
-
-```bash
-$ export PIANOBAR_CONFIG=~/.config/pianobar/config
-$ echo "event_command = ~/.config/pianobar/notify.rb" >> $PIANOBAR_CONFIG
+$ make install
 ```
